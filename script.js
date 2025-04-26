@@ -1,4 +1,4 @@
-// script.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -43,12 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start automatic continuous sliding
     let sliderTimer = setInterval(nextSlide, slideInterval);
 
-    // (Optional) Remove pause on hover if you want it fully continuous:
-    // const hero = document.querySelector('.hero');
-    // hero.addEventListener('mouseenter', () => clearInterval(sliderTimer));
-    // hero.addEventListener('mouseleave', () => {
-    //     sliderTimer = setInterval(nextSlide, slideInterval);
-    // });
+    
 
     // Set first slide as active
     slides[currentSlide].classList.add('active');
@@ -80,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
 });
 
-// Update validation rules
+//  validation rules
 const fields = {
     fullName: value => value.trim() !== '',
     email: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
@@ -91,12 +86,12 @@ const fields = {
     cvc: value => /^\d{3}$/.test(value)
 };
 
-// Update error messages
+// error messages
 function getErrorMessage(fieldId) {
     const messages = {
         phone: 'Invalid Bangladeshi phone number (should be +8801XXXXXXXXX)',
         address: 'Shipping address is required',
-        // Keep previous messages
+        
     };
     return messages[fieldId];
 }
@@ -107,4 +102,22 @@ document.getElementById('phone').addEventListener('input', function(e) {
                           .replace(/^880/, '')
                           .replace(/^1/, '8801')
                           .slice(0, 11);
+});
+
+// FAQ Interaction
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+        const answer = parent.querySelector('.faq-answer');
+        answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + 'px';
+    });
+});
+
+// Form Validation
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    alert('Thank you for your message! We will respond shortly.');
+    this.reset();
 });

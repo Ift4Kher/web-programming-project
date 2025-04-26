@@ -850,8 +850,7 @@
 }
 
 
-/* styles.css */
-/* Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -885,7 +884,7 @@
     top: 2rem;
 }
 
-/* Enhanced Checkout Form */
+/*  Checkout Form */
 .checkout-section {
     padding: 4rem 2rem;
     background: linear-gradient(45deg, #1a1a1a 0%, #2d2d2d 100%);
@@ -914,7 +913,7 @@
     margin-bottom: 2.5rem;
 }
 
-/* Enhanced Input Fields */
+/*  Input Fields */
 .form-group {
     position: relative;
     margin-bottom: 1.5rem;
@@ -990,7 +989,7 @@
         box-shadow: none;
     }
 }
-/* Add/Update CSS */
+
 /* Phone Number Styling */
 .phone-input {
     position: relative;
@@ -1059,5 +1058,223 @@ textarea:focus {
     
     .country-code {
         left: 10px;
+    }
+}
+
+/* Contact & Support Styles */
+.contact-support {
+    padding: 4rem 2rem;
+    background: #f8f8f8;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #c5a47e;
+    outline: none;
+    box-shadow: 0 0 8px rgba(197, 164, 126, 0.2);
+}
+
+.submit-btn {
+    background: #c5a47e;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background: #b08f69;
+    transform: translateY(-2px);
+}
+
+.faq-section {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.faq-section h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #c5a47e;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #666;
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    padding-bottom: 1rem;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form,
+    .faq-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Footer Styles */
+.site-footer {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 4rem 2rem 2rem;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-heading {
+    color: #c5a47e;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #c5a47e;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #c5a47e;
+    transform: translateY(-3px);
+}
+
+.footer-text {
+    color: #cccccc;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+    color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-text {
+        margin: 0 auto;
     }
 }
