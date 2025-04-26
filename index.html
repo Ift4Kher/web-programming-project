@@ -1,0 +1,384 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">Motion<span>Showcase</span></a>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="nav-right">
+                <!-- Icons -->
+                <div class="nav-icons">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--hero section-->
+<section class="hero">
+    <div class="slider-container">
+        <!-- Removed 'active' class from here -->
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/banner\ 1.jpg')"></div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/photo-1526045431048-f857369baa09.avif')"></div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/photo-1542496658-e33a6d0d50f6.avif')"></div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/photo-1557531365-e8b22d93dbd0.avif')"></div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/image\ 5.jpg')"></div>
+    </div>
+
+    <div class="hero-content">
+        <h1 class="hero-title">Elevate Your Time</h1>
+        <p class="hero-subtitle">Discover Our Premium Collection of Modern Timepieces</p>
+        <button class="hero-cta">Explore Collection</button>
+    </div>
+</section>
+
+<!-- Add this after your hero section -->
+<section class="featured-products">
+    <div class="container">
+        <h2 class="section-title">Featured Timepieces</h2>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 1.jpg" alt="Luxury Chronograph">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name"> Fossil Machine Mid-Size Chronograph Black Dial Men's Watch (FS4682)</h3>
+                <p class="product-price">$1,850</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 1 (2).jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Casio Edifice Chronograph Solar Powered Blue Dial Men's Watch (EQS-950DC-2AV)</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 2.jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Seiko 5 Sports GMT Automatic Blue Dial Men’s Watch (SSK003K1)</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 3.jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Amazfit GTS 4 (Model: A2174)c</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 4.jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Classic Automatic</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 5.jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Classic Automatic</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 6.jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Classic Automatic</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 7.jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Classic Automatic</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image 8.jpg" alt="Classic Automatic">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3 class="product-name">Classic Automatic</h3>
+                <p class="product-price">$2,450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Repeat for 4-6 products -->
+        </div>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories">
+    <div class="container">
+        <h2 class="section-title">Explore Collections</h2>
+        
+        <div class="categories-grid">
+            <!-- Category 1 -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/image 9.jpg" alt="Dress Watches">
+                </div>
+                <h3 class="category-name">Dress Watches</h3>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="images/image 10.jpeg" alt="Sports Watches">
+                </div>
+                <h3 class="category-name">Chronograph watches</h3>
+            </div>
+
+             <!-- Category 2 -->
+             <div class="category-card">
+                <div class="category-image">
+                    <img src="images/image 11.jpg" alt="Sports Watches">
+                </div>
+                <h3 class="category-name">
+                    Automatic watches</h3>
+            </div>
+
+             <!-- Category 2 -->
+             <div class="category-card">
+                <div class="category-image">
+                    <img src="images/image 12.jpg" alt="Sports Watches">
+                </div>
+                <h3 class="category-name">Smartwatches</h3>
+            </div>
+
+             <!-- Category 2 -->
+             <div class="category-card">
+                <div class="category-image">
+                    <img src="images/image 13.jpg" alt="Sports Watches">
+                </div>
+                <h3 class="category-name">Quartz watches</h3>
+            </div>
+
+             <!-- Category 2 -->
+             <div class="category-card">
+                <div class="category-image">
+                    <img src="images/image 14.jpg" alt="Sports Watches">
+                </div>
+                <h3 class="category-name">Pilot watches</h3>
+            </div>
+
+            <!-- Add 4 more categories following the same structure -->
+        </div>
+    </div>
+</section>
+
+<!-- Add this section after previous content -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <h2 class="section-title">Crafting Timeless Elegance</h2>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead-text">
+                        Since 2005, Chrono Luxe has redefined luxury timekeeping, blending Swiss precision 
+                        with contemporary design. Our curated collections represent the pinnacle of 
+                        horological craftsmanship.
+                    </p>
+                    
+                    <div class="unique-selling-points">
+                        <div class="usp-card">
+                            <div class="usp-icon">⌚</div>
+                            <h3>Hand-Assembled Excellence</h3>
+                            <p>Each timepiece meticulously crafted by master watchmakers</p>
+                        </div>
+                        
+                        <div class="usp-card">
+                            <div class="usp-icon">💎</div>
+                            <h3>Premium Materials</h3>
+                            <p>Only ethically-sourced diamonds and aerospace-grade metals</p>
+                        </div>
+                        
+                        <div class="usp-card">
+                            <div class="usp-icon">🌍</div>
+                            <h3>Global Certification</h3>
+                            <p>Internationally recognized quality standards and warranties</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-graphic">
+                    <div class="geometric-pattern"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Special Offers Section -->
+<section class="special-offers">
+    <div class="offer-banner">
+        <div class="offer-content">
+            <span class="offer-tag">FLASH SALE</span>
+            <h2 class="offer-title">Summer Luxury Watch Sale</h2>
+            <p class="offer-subtitle">Up to 60% Off Select Timepieces</p>
+            
+            <div class="price-container">
+                <span class="original-price">$2,500</span>
+                <span class="discounted-price">$999</span>
+                <span class="discount-percent">Save 60%</span>
+            </div>
+
+            <div class="countdown-timer">
+                <div class="timer-box">
+                    <span id="days">00</span>
+                    <span>Days</span>
+                </div>
+                <div class="timer-box">
+                    <span id="hours">00</span>
+                    <span>Hours</span>
+                </div>
+                <div class="timer-box">
+                    <span id="minutes">00</span>
+                    <span>Mins</span>
+                </div>
+                <div class="timer-box">
+                    <span id="seconds">00</span>
+                    <span>Secs</span>
+                </div>
+            </div>
+
+            <button class="cta-button">Claim Your Discount →</button>
+            <p class="limited-stock">Limited Stock Available - 32 Items Left</p>
+        </div>
+        <div class="offer-image">
+            <img src="images/image 2.jpg" alt="Premium Chronograph Watch">
+        </div>
+    </div>
+</section>
+
+<!-- Add to your form section -->
+<section class="checkout-section">
+    <div class="container">
+        <form id="checkoutForm" class="checkout-form">
+            <h2 class="form-title">Complete Your Purchase</h2>
+            
+            <div class="form-grid">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <!-- New Phone Number Field -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="phone-input">
+                        <span class="country-code">+880</span>
+                        <input type="tel" id="phone" placeholder="1XXXXXXXXX" required>
+                    </div>
+                    <span class="error-message"></span>
+                </div>
+
+                <!-- New Address Field -->
+                <div class="form-group full-width">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+
+                <!-- Payment Details -->
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="4242 4242 4242 4242" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="expDate">Expiration Date</label>
+                    <input type="text" id="expDate" placeholder="MM/YY" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" placeholder="123" required>
+                    <span class="error-message"></span>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="checkout-button">Confirm Payment</button>
+            </div>
+        </form>
+    </div>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
